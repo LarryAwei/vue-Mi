@@ -8,6 +8,20 @@
   </div>
 </template>
 
+<script>
+import storage from './storage/index'
+export default {
+  data() {
+    return {
+      
+    }
+  },
+  mounted() {
+    storage.setItem('user', {'a': 1})
+  },
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
