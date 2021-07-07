@@ -17,7 +17,10 @@ export default {
     }
   },
   mounted() {
-    storage.setItem('user', {'a': 1})
+    storage.setItem({"user":{"a":1},"add":{"city":"suzhou","info":{"name":"q","num":{"n":3}}}})
+    //storage.setItem('xxx','ccc','city')
+    //storage.clear('a', 'user')
+    console.log(storage.getItem('num','info'))
   },
 }
 </script>
